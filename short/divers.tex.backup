@@ -1,0 +1,36 @@
+%%% experience.ltx ---
+
+%% Author:        Didier Verna <didier@lrde.epita.fr>
+%% Maintainer:    Didier Verna <didier@lrde.epita.fr>
+%% Created:       Sun May 23 22:04:41 1999 under XEmacs 21.2 (beta 12)
+%% Last Revision: Mon Jul 12 12:03:38 1999
+
+
+%%% Commentary:
+
+%% Contents management by FCM version 0.1.
+
+\begin{rubric}{D I V E R S}
+\entry*[Langues]%
+  \textbf{Anglais}: bilingue (15 ans d'\'{e}tude, 10 ans v\'{e}cus aux USA).
+\entry*[Langues]%
+  \textbf{Espagnol}: courant (13 ans d'\'{e}tude).
+\entry*[Langues]%
+  \textbf{Portugais}: d\'{e}butant (1 semestre d'\'{e}tude).
+\entry*[Langues]%
+  \textbf{Italien}: d\'{e}butant (1 semestre d'\'{e}tude).
+\entry*[Loisirs]
+  \textbf{Natation}: membre des \'{e}quipes de Polytechnique et SUPAERO.
+\entry*[Loisirs]
+  \textbf{Multimedia}: dessin, cr\'{e}ation de films, infographie.
+\entry*[Loisirs]
+  \textbf{Cuisine}.
+\end{rubric}
+
+%%% Local Variables:
+%%% TeX-master: cv.ltx
+%%% ispell-local-dictionary: "francais"
+%%% TeX-master: t
+%%% End:
+
+%%% experience.ltx ends here
