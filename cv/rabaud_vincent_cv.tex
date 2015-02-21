@@ -1,81 +1,215 @@
-\documentstyle[resume]{article}
+\documentclass{article}
+
+\usepackage[french,english]{babel}
+\usepackage{iflang}
+\usepackage{resume}
+
 \begin{document}
+
+\selectlanguage{english}
 
 \name{\bf VINCENT RABAUD}
 
 \begin{llist}
 \sectiontitle{Education}
 
-\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO} \location{San Diego, CA}
+\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO} \location{San Diego, CA, USA}
+\IfLanguageName{english}
+{
 Ph.D. in Computer Science, 2009\\
 Dissertation:\textit{Manifold Learning Techniques for Non-Rigid Structure from
 Motion}.\\
 Advisor: Serge Belongie.\\
 Research Interests: Structure from Motion, Multiview Geometry, Panorama, Image Manifold Learning, Tracking, Behavior Analysis, Optimization, Visual Captchas, Perception.
+}
+{
+Ph.D. en Informatique, 2009\\
+Dissertation:\textit{Manifold Learning Techniques for Non-Rigid Structure from
+Motion}.\\
+Centres d'int\'{e}r\^{e}t: Reconstruction 3D par \'{e}tude de mouvement, Segmentation de mouvement, Tracking, 
+Apprentissage de vari\'{e}t\'{e}s, Perception visuelle.\\
+Ma\^{i}tre de th\`{e}se: Serge Belongie.
+}
 
 \employer{SUPAERO} \location{Toulouse, France}
+\IfLanguageName{english}
+{
 M.S. in Aeronautical and Space Engineering, Space Imagery Major, 2003.
+}
+{
+Dipl\^{o}me d'ing\'{e}nieur, 2003
+}
 
 \employer{ECOLE POLYTECHNIQUE} \location{Paris, France}
+\IfLanguageName{english}
+{
 B.S./M.S. in Applied Math, Fluid Mechanics and Parallel Computing, 2001.
+}
+{
+Dipl\^{o}me d'ing\'{e}nieur, 2001
+}
 
 % Research Experience
+\IfLanguageName{english}
+{
 \sectiontitle{Work Experience}
-\employer{ALDEBARAN ROBOTICS}\location{Paris, France}
-\dates{April 2013--present}
+}
+{
+\sectiontitle{Exp\'{e}rience Professionnelle}
+}
+
+\employer{ALDEBARAN}\location{Paris, France}
+\dates{09/2014--}
+\IfLanguageName{english}
+{
+SW/HW link director
+}
+{
+Directeur des relations software/hardware
+}
+
+\employer{ALDEBARAN}\location{Paris, France}
+\dates{04/2013--09/2013}
+\IfLanguageName{english}
+{
 Perception Team Manager, Object Recognition (2d/3d), Human Interaction.
+}
+{
+Manageur de l'\'{e}quipe Perception. Interaction Audio/Video, Reconnaissance d'Objets (2d/3d), Reconaissance/Tracking de 
+Personne.
+}
 
-\employer{OPENCV FOUNDATION}
-\dates{June 2012--present}
+\employer{OPENCV FOUNDATION\\}
+\dates{06/2012--}
+\IfLanguageName{english}
+{
 Co-Founder and Member of the Board.
+}
+{
+Co-Fondateur et Membre du Conseil.
+}
 
-\employer{WILLOW GARAGE}\location{Menlo Park, CA} 
-\dates{January 2011--March 2013}
+\employer{WILLOW GARAGE}\location{Menlo Park, CA, USA} 
+\dates{01/2011--03/2013}
+\IfLanguageName{english}
+{
 Research Engineer, Object Recognition (2d/3d), OpenCV developement and management, SLAM, ROS infrastructure.
+}
+{
+Ing\'{e}nieur Chercheur, Reconnaissance d'objets (2d/3d), d\'{e}veloppement et management gestion de l'\'{e}quipe 
+OpenCV, SLAM, d\'{e}veloppement et maintien de ROS.
+}
 
-\employer{VIDEOSURF}\location{San Mateo, CA} 
-\dates{March 2009--January 2011}
+\employer{VIDEOSURF}\location{San Mateo, CA, USA} 
+\dates{03/2009--01/2011}
+\IfLanguageName{english}
+{
 Software Engineer, Face Recognition, Video Summary, Video Pipeline
 Optimizations.
+}
+{
+Ing\'{e}nieur D\'{e}veloppeur, Reconnaissance faciale, Analyse
+Vid\'{e}o.
+}
 
-\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO}\location{La Jolla, CA} 
-\dates{January 2004--March 2009}
+\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO}\location{La Jolla, CA, USA} 
+\dates{01/2004--03/2009}
+\IfLanguageName{english}
+{
 Graduate Student Researcher, Department of Computer Science and Engineering.
+}
+{
+Etudiant chercheur, D\'{e}partment d'informatique.
+}
 
-\employer{CENTER FOR INTERDISCIPLINARY SCIENCE FOR ART, ARCHITECTURE AND ARCHAEOLOGY (CISA3)}\location{La Jolla, CA} 
-\dates{June 2007--September 2007}
+\employer{CENTER FOR INTERDISCIPLINARY SCIENCE FOR ART, ARCHITECTURE AND ARCHAEOLOGY (CISA3)}\location{La Jolla, CA, 
+USA} 
+\dates{06/2007--09/2007}
+\IfLanguageName{english}
+{
 Intern, Painting Panoramas, High Resolution Mosaics.
+}
+{
+Stagiaire, Reconstruction automatique de panorama de peinture, Mosa\"{\i}que haute r\'{e}solution.
+}
 
-\employer{CALIT2}\location{La Jolla, CA} 
-\dates{June 2005--September 2005}
+\employer{CALIT2}\location{La Jolla, CA, USA} 
+\dates{06/2005--09/2005}
+\IfLanguageName{english}
+{
 Intern, Visual Crowd Management, {\em RESCUE} Project.
+}
+{
+Stagiaire, Etude visuelle de foules humaines, Projet {\em RESCUE}.
+}
 
-\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO}\location{La Jolla, CA} 
-\dates{May 2003--December 2004}
+\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO}\location{La Jolla, CA, USA} 
+\dates{05/2003--12/2004}
+\IfLanguageName{english}
+{
 Intern, Animal Behavior Analysis, {\em Smart Vivarium} Project.
+}
+{
+Stagiaire, Groupe de vision par ordinateur, Projet {\em Smart Vivarium}.
+}
 
 \employer{CENTRE NATIONAL D'ETUDES SPATIALES (CNES)}\location{Toulouse, France} 
-\dates{Summer and Fall 2002}
+\dates{06/2002--12/2002}
+\IfLanguageName{english}
+{
 Intern, Space Mechanics Department, French Space Agency.
+}
+{
+Stagiaire, D\'{e}partement de M\'{e}canique Spatiale.
+}
 
 \employer{OFFICE NATIONAL D'ETUDES ET DE RECHERCHES AEROSPATIALES (ONERA)} \location{Toulouse, France}
-\dates{Spring 2002}
+\dates{03/2002--06/2002}
+\IfLanguageName{english}
+{
 Intern, Flight Mechanics Department.
+}
+{
+Stagiare, D\'{e}partement de M\'{e}canique du Vol.
+}
 
 \employer{DYNAFLOW-INC} \location{Jessup, MD}
-\dates{Spring 2001}
+\dates{04/2001--06/2001}
+\IfLanguageName{english}
+{
 Intern, Fluid Mechanics Modeling.
+}
+{
+Stagiaire, Modelisation de M\'{e}canique des Fluides.
+}
 
 % Teaching Experience
+\IfLanguageName{english}
+{
 \sectiontitle{Teaching Experience}
-\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO}\location{La Jolla, CA}
+}
+{
+\sectiontitle{Exp\'{e}rience Educative}
+}
+\employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO}\location{La Jolla, CA, USA}
+\IfLanguageName{english}
+{
 CSE252C, {\em Object Recognition}, Fall 2007: Teaching Assistant\\
 CSE166, {\em Image Processing}, Fall 2007: Teaching Assistant
+}
+{
+SE252C, {\em Reconnaissance d'objet}, Automne 2007: Assistant de Professeur\\
+CSE166, {\em Traitement d'image}, Automne 2007: Assistant de Professeur
+}
 
 % Professional Activities
+\IfLanguageName{english}
+{
 \sectiontitle{Professional Activities}
 
 Co-founder and member of the board of the OpenCV foundation.
+
+Mentor and organizer of Google Summer of Code for OpenCV from 2011 to 2015.
 
 Reviewer: IEEE International Conference on Computer Vision, IEEE Conference on Computer Vision and Pattern Recognition, 
 SIGGRAPH, IEEE Transaction on Pattern Analysis and Machine Intelligence, International Journal of Computer Vision
@@ -83,18 +217,47 @@ SIGGRAPH, IEEE Transaction on Pattern Analysis and Machine Intelligence, Interna
 Organizer of Pixel-Cafe, the weekly vision and graphics seminar at UCSD.
 
 IEEE member, 2005-present
+}
+{
+\sectiontitle{Activit\'{e} Professionnelle}
+
+Tr\'{e}sorier et membre du conseil d'administration de la fondation OpenCV.
+
+Mentor et organisateur de Google Summer of Code pour OpenCV de 2011 \`{a} 2015.
+
+Membre de comit\'{e} de lecture: IEEE International Conference on Computer Vision, IEEE Conference on Computer Vision 
+and Pattern Recognition, SIGGRAPH.
+
+Organisateur du Pixel-Cafe, le s\'{e}minaire hebdomadaire de vision et image par ordinateur \`{a} UCSD.
+
+Membre de IEEE.
+}
 
 % Skills
+\IfLanguageName{english}
+{
 \sectiontitle{Skills}
-{\em Skills}: Vision (SfM, web video analysis, image retrieval, objec trecognition), Robotics, Management \\
-{\em Programming Languages}: C++, Python, Javascript \\
+{\em Skills}: Vision (SfM, web video analysis, image retrieval, object recognition), Robotics, Management \\
+{\em Programming Languages}: C++, Python\\
 {\em Programming Libraries}: OpenCV, ROS, Boost, OpenMP, TBB, PVM, MPI \\
-{\em Extra Interests}: Android, Drupal, PHP, MySQL \\
+{\em Extra Interests}: Android, Drupal, Matlab, Javascript, PHP, MySQL, Fortran \\
 {\em Languages}: French (native), English (fluent), Spanish (fluent), Portuguese (beginner), Italian (beginner)
+}
+{
+\sectiontitle{Comp\'{e}tences}
+{\em Comp\'{e}tences}: Vision, Robotique, Management\\
+{\em Langages}: C++, Python, exp\'{e}rience en Matlab, Javascript, Fortran \\
+{\em Librairies}: OpenCV, ROS, Boost, OpenMP, TBB, PVM, MPI \\
+{\em Autres Int\'{e}r\^{e}ts}: Android, Drupal, Matlab, Javascript, PHP, MySQL, Fortran \\
+{\em Langues}: Fran\c{c}ais (natif), Anglais (fluent), Espagnol (fluent), Portugais (d\'{e}butant), Italien 
+(d\'{e}butant)
+}
 
 % Software
+\IfLanguageName{english}
+{
 \sectiontitle{Software}
-{\em ROS packages}: maintainer/developer of 60 ROS packages and involved in the core development.
+{\em ROS packages}: maintainer/developer of 60+ ROS packages and involved in the core development.
 
 {\em Recognition Kitchen}: set of tools to develop and execute object recognition.
 
@@ -103,13 +266,44 @@ description, face detection and facial expression analysis.
 
 {\em Painting Panorama}: fast and memory efficient panorama software for very high resolution images of paintings.  Incorporates sparse bundle adjustment, sift and camera auto calibration.
 
-{\em Vincent's Structure from Motion Toolbox for Matlab}: toolbox including many common structure from motion algorithms (e.g. rigid, non-rigid, bundle adjustment, visualization).
+{\em Vincent's Structure from Motion Toolbox for Matlab}: toolbox including many common structure from motion algorithms 
+(e.g. rigid, non-rigid, bundle adjustment, visualization).
+}
+{
+\sectiontitle{Logiciels}
+{\em ROS packages}: mainteneur et d\'{e}veloppeur de 60+ paquet ROS et impliqu\'{e} dans le d\'{e}veloppement du 
+noyau.
+
+{\em Recognition Kitchen}: ensemble d'outils pour d\'{e}velopper et faire de la reconnaissance d'objet.
+
+{\em Surveillance Video Entertainment System}, (SVEN): logiciel de tracking en temps r\'eel de personnes, incluant un 
+descripteur d'apparence, une d\'{e}tection de visage et une analyse d'expression.
+
+{\em Painting Panorama}: logiciel rapide pour fusionner des images en une mosa\"{i}que haute r\'{e}solution.  L'accent 
+a \'{e}t\'{e} mis sur l'efficacit\'{e} et la n\'{e}cessit\'{e} de faibles ressources.  Ce logiciel inclut un ajustement 
+de faisceaux, les descripteurs SIFT et une calibration automatique.
+
+{\em Vincent's Structure from Motion Toolbox for Matlab}: toolbox pour Matlab incluant plusieurs routines de 
+reconstruction 3D (pour un objet rigide, non-rigide, ajustement de faisceaux, calcul d'orientation \dots).
+}
 
 % Papers
+\IfLanguageName{english}
+{
 \sectiontitle{Journal Articles}
+}
+{
+\sectiontitle{Articles dans des Revues Internationales}
+}
 \input{publications_journals.tex}
 
+\IfLanguageName{english}
+{
 \sectiontitle{Papers in Reviewed Proceedings}
+}
+{
+\sectiontitle{Articles dans des Conf\'{e}rences Internationales}
+}
 \input{publications_articles.tex}
 
 % Video
@@ -131,7 +325,6 @@ Instructional DVD, 2005.
 
 \end{llist}
 
-%{\em Last update: \today}
 {\em Last update: \today}
 
 \end{document}
