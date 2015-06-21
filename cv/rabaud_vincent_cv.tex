@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage[french,english]{babel}
+\usepackage{eurosym}
 \usepackage{iflang}
 \usepackage{resume}
 
@@ -14,16 +15,17 @@
 \sectiontitle{Education}
 
 \employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO} \location{San Diego, CA, USA}
+\dates{01/2004--02/2009}
 \IfLanguageName{english}
 {
-Ph.D. in Computer Science, 2009\\
-Dissertation:\textit{Manifold Learning Techniques for Non-Rigid Structure from
+Ph.D. in Computer Science\\
+Dissertation: \textit{Manifold Learning Techniques for Non-Rigid Structure from
 Motion}.\\
 Advisor: Serge Belongie.\\
 Research Interests: Structure from Motion, Multiview Geometry, Panorama, Image Manifold Learning, Tracking, Behavior Analysis, Optimization, Visual Captchas, Perception.
 }
 {
-Ph.D. en Informatique Appliqu\'{e}e \`{a} la Vision par Ordinateur, 2009\\
+Ph.D. en Informatique Appliqu\'{e}e \`{a} la Vision par Ordinateur\\
 Dissertation:\textit{Manifold Learning Techniques for Non-Rigid Structure from
 Motion}.\\
 Centres d'int\'{e}r\^{e}t: Reconstruction 3D par \'{e}tude de mouvement, Segmentation de mouvement, Tracking, 
@@ -32,21 +34,23 @@ Ma\^{i}tre de th\`{e}se: Serge Belongie.
 }
 
 \employer{SUPAERO} \location{Toulouse, France}
+\dates{09/2001--08/2003}
 \IfLanguageName{english}
 {
-M.S. in Aeronautical and Space Engineering, Space Imagery Major, 2003.
+M.S. in Aeronautical and Space Engineering, Space Imagery Major.
 }
 {
-Dipl\^{o}me d'ing\'{e}nieur, 2003
+Dipl\^{o}me d'ing\'{e}nieur.
 }
 
 \employer{ECOLE POLYTECHNIQUE} \location{Paris, France}
+\dates{09/1998--08/2001}
 \IfLanguageName{english}
 {
-B.S./M.S. in Applied Math, Fluid Mechanics and Parallel Computing, 2001.
+B.S./M.S. in Applied Math, Fluid Mechanics and Parallel Computing.
 }
 {
-Dipl\^{o}me d'ing\'{e}nieur, 2001
+Dipl\^{o}me d'ing\'{e}nieur.
 }
 
 % Research Experience
@@ -57,33 +61,40 @@ Dipl\^{o}me d'ing\'{e}nieur, 2001
 {
 \sectiontitle{Exp\'{e}rience Professionnelle}
 }
+\vspace{-0.33cm}
 
 \employer{ALDEBARAN}\location{Paris, France}
-\dates{09/2014--}
+\dates{04/2013--now}
 \IfLanguageName{english}
 {
-SW/HW link director
+SW/HW Link Director
+\vspace{-0.33cm}
+\begin{itemize}
+ \item managing two 10-person teams: one focusing on the audio and visual perception of the robot (automated speech 
+recognition, text to speech, object recognition, person detection) and one on its movement.
+ \item handling the projects definitions, plannings, contracts, execution and participating to the code and technical 
+decisions.
+ \item since 09/2014, improving relationships between the software and hardware departments by relaying and defining 
+the different plannings, decisions and implementations.
+\end{itemize}
 }
 {
-Directeur des relations software/hardware
-}
-
-\employer{ALDEBARAN}\location{Paris, France}
-\dates{04/2013--09/2013}
-\IfLanguageName{english}
-{
-Perception Team Manager, Object Recognition (2d/3d), Human Interaction.
-}
-{
-Manager de l'\'{e}quipe Perception. Interaction Audio/Video, Reconnaissance d'Objets (2d/3d), Reconnaissance/Tracking de 
+Directeur des relations software/hardware.
+Manager de l'\'{e}quipe Perception. Interaction Audio/Video, Reconnaissance d'Objets (2d/3d), Reconnaissance/Tracking 
+de 
 Personne.
 }
 
 \employer{OPENCV FOUNDATION\\}
-\dates{06/2012--}
+\dates{06/2012--now}
 \IfLanguageName{english}
 {
-Co-Founder and Member of the Board of the official OpenCV foundation.
+Co-Founder and Member of the Board of the official OpenCV library foundation
+\vspace{-0.33cm}
+\begin{itemize}
+ \item representing the OpenCV library in public events.
+ \item managing contracts and collaborations (e.g. during Google Summer Of Code).
+\end{itemize}
 }
 {
 Co-Fondateur et Membre du Conseil de la fondation \`{a} but non lucratif officielle d'OpenCV.
@@ -93,7 +104,13 @@ Co-Fondateur et Membre du Conseil de la fondation \`{a} but non lucratif officie
 \dates{01/2011--03/2013}
 \IfLanguageName{english}
 {
-Research Engineer, Object Recognition (2d/3d), OpenCV developement and management, SLAM, ROS infrastructure.
+Research Engineer
+\vspace{-0.33cm}
+\begin{itemize}
+ \item designed and implemented new techniques for object recognition based on 2D/3D information.
+ \item developed and managed part of the OpenCV library.
+ \item worked on several projects related to the Robot Operating System like SLAM, build system, grasping.
+\end{itemize}
 }
 {
 Ing\'{e}nieur Chercheur, Reconnaissance d'objets (2d/3d), d\'{e}veloppement et gestion de l'\'{e}quipe 
@@ -104,8 +121,13 @@ OpenCV, SLAM, d\'{e}veloppement et maintien de ROS.
 \dates{03/2009--01/2011}
 \IfLanguageName{english}
 {
-Software Engineer, Face Recognition, Video Summary, Video Pipeline
-Optimizations.
+Software Engineer
+\vspace{-0.33cm}
+\begin{itemize}
+ \item developed and implemented algorithms to visually analyze videos from the web using face recognition, video 
+summaries and scene analysis.
+ \item multiplied by 5 the speed of our processing pipeline up to 200K web videos a day on 30 machines.
+\end{itemize}
 }
 {
 Ing\'{e}nieur D\'{e}veloppeur, Reconnaissance faciale, Analyse
@@ -113,10 +135,10 @@ Vid\'{e}o.
 }
 
 \employer{UNIVERSITY OF CALIFORNIA, SAN DIEGO}\location{La Jolla, CA, USA} 
-\dates{01/2004--03/2009}
+\dates{01/2004--02/2009}
 \IfLanguageName{english}
 {
-Graduate Student Researcher, Department of Computer Science and Engineering.
+Graduate Student Researcher, Department of Computer Science and Engineering
 }
 {
 Etudiant chercheur, D\'{e}partment d'informatique.
@@ -127,7 +149,12 @@ USA}
 \dates{06/2007--09/2007}
 \IfLanguageName{english}
 {
-Intern, Painting Panoramas, High Resolution Mosaics.
+Intern
+\vspace{-0.33cm}
+\begin{itemize}
+ \item with two other persons, designed a robot to scan artist paintings.
+ \item created vision algorithms to create on the fly giga-pixel panoramas and visualize them in a web browser.
+\end{itemize}
 }
 {
 Stagiaire, Reconstruction automatique de panorama de peinture, Mosa\"{\i}que haute r\'{e}solution.
@@ -137,7 +164,12 @@ Stagiaire, Reconstruction automatique de panorama de peinture, Mosa\"{\i}que hau
 \dates{06/2005--09/2005}
 \IfLanguageName{english}
 {
-Intern, Visual Crowd Management, {\em RESCUE} Project.
+Intern, {\em RESCUE} Project
+\vspace{-0.33cm}
+\begin{itemize}
+ \item designed and implemented algorithms to perform real-time crowd analysis for person counting and movement 
+description.
+\end{itemize}
 }
 {
 Stagiaire, Etude visuelle de foules humaines, Projet {\em RESCUE}.
@@ -147,7 +179,12 @@ Stagiaire, Etude visuelle de foules humaines, Projet {\em RESCUE}.
 \dates{05/2003--12/2004}
 \IfLanguageName{english}
 {
-Intern, Animal Behavior Analysis, {\em Smart Vivarium} Project.
+Intern, {\em Smart Vivarium} Project
+\vspace{-0.33cm}
+\begin{itemize}
+ \item designed and implemented algorithms to perform automatic analysis of rodent behavior: breathing and sleeping 
+frequencies, movement and tracking.
+\end{itemize}
 }
 {
 Stagiaire, Groupe de vision par ordinateur, Projet {\em Smart Vivarium}.
@@ -157,7 +194,13 @@ Stagiaire, Groupe de vision par ordinateur, Projet {\em Smart Vivarium}.
 \dates{06/2002--12/2002}
 \IfLanguageName{english}
 {
-Intern, Space Mechanics Department, French Space Agency.
+Intern, Space Mechanics Department, French Space Agency
+\vspace{-0.33cm}
+\begin{itemize}
+ \item designed and implemented an algorithm to efficiently and accurately choose the best launch trajectory 
+to avoid space debris.
+ \item implemented a model of space explosion to study the movement of space debris due to collision.
+\end{itemize}
 }
 {
 Stagiaire, D\'{e}partement de M\'{e}canique Spatiale.
@@ -167,7 +210,11 @@ Stagiaire, D\'{e}partement de M\'{e}canique Spatiale.
 \dates{03/2002--06/2002}
 \IfLanguageName{english}
 {
-Intern, Flight Mechanics Department.
+Intern, Flight Mechanics Department
+\vspace{-0.33cm}
+\begin{itemize}
+ \item proved the optimal position of a glider for optimal fuel efficiency of the plane pulling it in flight.
+\end{itemize}
 }
 {
 Stagiare, D\'{e}partement de M\'{e}canique du Vol.
@@ -177,7 +224,11 @@ Stagiare, D\'{e}partement de M\'{e}canique du Vol.
 \dates{04/2001--06/2001}
 \IfLanguageName{english}
 {
-Intern, Fluid Mechanics Modeling.
+Intern, Fluid Mechanics Modeling
+\vspace{-0.33cm}
+\begin{itemize}
+ \item implemented an algorithm to describe the formation of cavities on underwater propellers.
+\end{itemize}
 }
 {
 Stagiaire, Mod\'{e}lisation de M\'{e}canique des Fluides.
@@ -242,18 +293,19 @@ Membre de IEEE.
 \IfLanguageName{english}
 {
 \sectiontitle{Skills}
-{\em Skills}: Vision (SfM, web video analysis, image retrieval, object recognition), Robotics, Programming, Architecture, Management \\
-{\em Programming Languages}: C++, Python\\
-{\em Programming Libraries}: OpenCV, ROS, Boost, OpenMP, TBB, PVM, MPI \\
-{\em Extra Interests}: Android, Drupal, Matlab, Javascript, PHP, MySQL, Fortran \\
-{\em Languages}: French (native), English (bilingual), Spanish (fluent), Portuguese (beginner), Italian (beginner)
+Competence: Vision (SfM, web video analysis, image retrieval, object recognition), Robotics, Programming, Architecture, 
+Management \\
+Programming Languages: C++, Python\\
+Programming Libraries: OpenCV, ROS, Boost, OpenMP, TBB, PVM, MPI \\
+Extra Interests: Android, Drupal, Matlab, Javascript, PHP, NOSQL \\
+Languages: French (native), English (bilingual), Spanish (fluent), Portuguese (beginner), Italian (beginner)
 }
 {
 \sectiontitle{Comp\'{e}tences}
 {\em Comp\'{e}tences}: Vision, Robotique, Programmation, Architecte Logiciel, Management\\
 {\em Langages de Programmation}: C++, Python\\
 {\em Biblioth\`{e}ques Logicielles}: OpenCV, ROS, Boost, OpenMP, TBB, PVM, MPI \\
-{\em Autres Int\'{e}r\^{e}ts}: Android, Drupal, Matlab, Javascript, PHP, MySQL, Fortran \\
+{\em Autres Int\'{e}r\^{e}ts}: Android, Drupal, Matlab, Javascript, PHP, NOSQL \\
 {\em Langues}: Fran\c{c}ais (natif), Anglais (bilingue), Espagnol (fluent), Portugais (d\'{e}butant), Italien
 (d\'{e}butant)
 }
@@ -262,11 +314,12 @@ Membre de IEEE.
 \IfLanguageName{english}
 {
 \sectiontitle{Software}
-{\em ROS packages}: maintainer/developer of 60+ ROS packages about computer vision, lasers, graph processing, the NAO robot.
+{\em ROS packages}: maintainer/developer of 60+ ROS packages about computer vision, lasers, graph processing, the NAO 
+robot.
 
 {\em Recognition Kitchen}: set of tools to develop and execute object recognition.
 
-{\em Surveillance Video Entertainment System}, (SVEN): real-time tracking of pedestrians incorporating appearance 
+{\em Surveillance Video Entertainment System} (SVEN): real-time tracking of pedestrians incorporating appearance 
 description, face detection and facial expression analysis.
 
 {\em Painting Panorama}: fast and memory efficient panorama software for very high resolution images of paintings.  Incorporates sparse bundle adjustment, sift and camera auto calibration.
